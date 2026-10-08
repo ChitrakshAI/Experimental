@@ -1,0 +1,193 @@
+{
+ "runbook": "marketplace-hub/RUNBOOK-FRANKIE-UPWORK.md",
+ "account": "upwork/TODO-frankie",
+ "schema_version": 1,
+ "updated": "2026-09-14T21:00:00Z",
+ "current_step": "A1",
+ "rule": "After every step: mark it done here, project_write this file, log the ledger line, project_write the ledger. Resume from current_step in any new session. Statuses: pending, in_progress, done, blocked, skipped.",
+ "inputs": {
+  "actor": null,
+  "browser_mode": null,
+  "handle": null,
+  "profile_url": null,
+  "headshot_file": null,
+  "employment": null,
+  "education": null,
+  "languages": null,
+  "hourly_rate": null,
+  "city": null
+ },
+ "steps": {
+  "A1": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "A2": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "A3": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "A4": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "B1": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "B2": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "B3": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "B4": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "B5": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "B6": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "B7": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C0": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C1": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C2": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C3": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C4": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C5": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C6": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C7": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C8": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C9": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "C10": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "D1": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "D2": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "D3": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "D4": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "E1": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "F1": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "F2": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "F3": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "G0": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "G1": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "G2": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  },
+  "G3": {
+   "status": "pending",
+   "done_at": null,
+   "note": ""
+  }
+ },
+ "notes": []
+}

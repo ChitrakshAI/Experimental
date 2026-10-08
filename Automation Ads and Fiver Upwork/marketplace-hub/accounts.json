@@ -1,0 +1,496 @@
+{
+  "schema_version": 2,
+  "note": "Registry of every marketplace account this business operates or plans to operate. One record per account. Adding a platform means adding a record here, a playbook in playbooks/, and templates in templates/. Rules quoted in tos_notes are verbatim from the platforms' own help pages, cited to research/marketplace-expansion.md section 3, which carries the URLs. Anything still unverified says so.",
+  "last_reviewed": "2026-09-14",
+  "entity_of_record": {
+    "brands": [
+      "Oraya",
+      "Oraya Labs",
+      "Hanflux AI"
+    ],
+    "delivery_arm": "Hanflux AI",
+    "founders": [
+      {
+        "name": "Chitraksh Mayank",
+        "role": "builds and delivers",
+        "jurisdiction": "India (Ranchi / Bengaluru)",
+        "credential": "graduate lawyer, B.B.A. LL.B. (Hons.), Business Law"
+      },
+      {
+        "name": "Frankie Alicea",
+        "role": "sells, fronts the US, holds the US Upwork account",
+        "jurisdiction": "United States",
+        "credential": "licensed insurance producer"
+      }
+    ],
+    "positioning": "a lawyer who ships production AI systems"
+  },
+  "structure_rule": "Two humans, two accounts, one Upwork agency, zero grey area. One account per person on both platforms. The agency is the only legitimate shared surface. See STRATEGY.md section (c) and the never_do list below.",
+  "build_order": [
+    {
+      "step": 1,
+      "entity": "Chitraksh Upwork freelancer account (India)",
+      "owner": "Chitraksh",
+      "when": "day 1",
+      "status": "planned",
+      "note": "Builder identity. ID verification the same day, because verification gates Rising Talent and unverifiable information risks permanent suspension. Two specialized profiles. Holds the JSS that every badge compounds on."
+    },
+    {
+      "step": 2,
+      "entity": "Frankie Upwork freelancer account (US)",
+      "owner": "Frankie",
+      "when": "day 1",
+      "status": "planned",
+      "note": "His own device, his own payment method, his own ID verification. This is the only account that can see US-only job posts."
+    },
+    {
+      "step": 3,
+      "entity": "Oraya Labs Upwork agency",
+      "owner": "created from Chitraksh's freelancer account",
+      "when": "day 1",
+      "status": "planned",
+      "note": "One agency per freelancer. Agency Plus (about $19.99/month) is required before any member can be added."
+    },
+    {
+      "step": 4,
+      "entity": "Frankie added to the agency as business manager",
+      "owner": "Chitraksh invites, Frankie accepts",
+      "when": "day 2",
+      "status": "planned",
+      "note": "Business managers can submit proposals on behalf of the agency and are the only role that can accept an offer. This puts the commercial close where the sales lead is."
+    },
+    {
+      "step": 5,
+      "entity": "Fiverr seller account @hanfluxai",
+      "owner": "Chitraksh",
+      "when": "done",
+      "status": "active",
+      "note": "Live. Three gigs. One account, one person."
+    },
+    {
+      "step": 6,
+      "entity": "Fiverr agency",
+      "owner": "n/a",
+      "when": "deferred",
+      "status": "blocked",
+      "note": "Requires a minimum of 3 in-house team members, maximum 9. Two founders is one short. Revisit when a third person joins. Orders, gigs, chats and reviews carry over on switching, so nothing is lost by waiting."
+    }
+  ],
+  "never_do": [
+    "Never open a second Fiverr account, for the company, for a brand, or for any reason. Fiverr: 'In order to buy and/or sell services on Fiverr you may have only one account.' Consequence: 'Any violation of this policy can lead to permanent suspension of the account(s) involved in this activity.' The plural reaches every account in the cluster.",
+    "Never log into the other founder's account on any platform for any reason. Upwork: 'You cannot log into someone else's account or let anyone log into your account and work or communicate on your behalf.'",
+    "Never share payment methods, withdrawal accounts, devices, browsers or IP between the two Upwork accounts. Linked accounts are flagged by device and browser fingerprint and by payment-method links.",
+    "Never front a US identity on an account operated from India. Upwork: 'The name on your account should be what you use to identify yourself in everyday life' and 'The address you provide should be your business address', with permanent suspension where information cannot be verified.",
+    "Never reopen a closed Upwork account with the same email. Upwork names that as a Terms of Service violation.",
+    "Never create a Fiverr agency before a third in-house member exists. The stated minimum is 3 team members.",
+    "Never route a marketplace conversation off-platform for payment or contact details. Fiverr requires all communication on the platform, and personal contact details inside a gig are an explicit denial trigger.",
+    "Never cancel an Upwork contract ourselves. Freelancer-initiated cancellations are a very strong JSS negative. Negotiate a reduced-scope close instead.",
+    "Never buy a review, coach a review, or accept an order for a deliverable that is not genuinely delivered. Order manipulation is an account-termination risk, not a warning.",
+    "Never claim production-scale metrics. Answer rate, booking rate and calls-at-scale are not measured. Latency is measured. State the method and the date, every time.",
+    "Never imply US bar admission or insurance licensure. Compliance framing is engineering, not legal advice.",
+    "Never mention Hanflux on Frankie's Upwork account: not in the profile, headline, overview, portfolio, catalog listings, proposals or messages. Frankie presents as Frankie Alicea, Oraya, licensed insurance producer. Founder directive 2026-09-14. The agency is Oraya Labs (orayalabs.ai), decided 2026-09-14, so agency membership is fine to show."
+  ],
+  "accounts": [
+    {
+      "platform": "fiverr",
+      "handle": "hanfluxai",
+      "display_name": "Chitraksh M.",
+      "owner": "Chitraksh Mayank",
+      "jurisdiction": "India (Ranchi / Bengaluru)",
+      "status": "active",
+      "purpose": "Primary seller account. Sells per-client voice agent builds, compliance-gated outbound, and production n8n workflows to US car dealerships and insurance agencies.",
+      "created": "2026-09-11",
+      "profile_url": "https://www.fiverr.com/hanfluxai",
+      "tos_notes": "VERIFIED, research/marketplace-expansion.md section 3.1 and 3.2. One account per person: 'In order to buy and/or sell services on Fiverr you may have only one account.' Prohibited purposes of multiple accounts include gaining a competitive advantage and bypassing a restriction. Consequence: 'Any violation of this policy can lead to permanent suspension of the account(s) involved in this activity', and for severe violations the decision 'cannot be reversed'. The only stated exception is a seller account plus a seat in a Team Account. Detection surface is shared IP, shared payment methods, behavioural signals and network relationships. A third-party reading that a registered company and its employee may hold separate accounts is NOT Fiverr policy and is not relied on. Fiverr agencies require a team of at least 3 in-house professionals (up to 9), are invitation-based, and are limited to five categories including Programming and Tech; orders, gigs, chats and reviews carry over on switching. Fiverr Pro acceptance is reported below 3% with a 2 to 4 week review, weighting off-platform credentials above Fiverr review counts. External promotion is explicitly permitted: 'Sharing a link to your Gig or profile is encouraged', including paid advertising on Facebook, Instagram and Google, but never with personal contact details and never moving communication off-platform.",
+      "verification_state": {
+        "id_verification": "pending",
+        "w8ben": "pending",
+        "india_gst_form": "pending",
+        "payout_method": "pending",
+        "education_entry": "pending, graduation year to confirm",
+        "seller_plus_kickstart": "declined at signup, decision open. $15/month, refundable within 48 hours of the last monthly payment, buys keyword data and no ranking"
+      },
+      "seller_level": "New Seller",
+      "level_targets": {
+        "level_1": "60 days active, 5 orders from 3 unique clients, $400 lifetime, 4.4+ rating, 80% response rate, Success Score 5.0+",
+        "level_2": "120 days active, 20 orders from 10 unique clients, $2,000 lifetime, 4.6+ rating, 90% response rate, Success Score 7.0+. Level 2 is what unlocks Briefs, custom offers to $10,000 and 20 gig slots."
+      },
+      "promoted_gigs": "Not eligible in the first 30 days. Fiverr does not publish the gate; third-party sources put it at Level 1 or Level 2 plus a completed-order threshold and disagree with each other. Verify inside the seller dashboard and log the answer before planning spend.",
+      "gigs": [
+        {
+          "ref": "gig1",
+          "short": "AI voice receptionist, dealers and agencies",
+          "title": "build AI voice receptionist for car dealerships and insurance agencies",
+          "slug": "build-ai-voice-receptionist-for-car-dealerships-and-insurance-agencies",
+          "slug_confirmed": true,
+          "category_path": "Programming & Tech > Software Development > Automations & Workflows",
+          "service_type": "AI Agents",
+          "declared_state": "draft",
+          "price_ladder": "450/1200/2800",
+          "packages": [
+            {
+              "tier": "Basic",
+              "name": "Starter Line",
+              "price_usd": 450,
+              "delivery_days": 5,
+              "revisions": 2
+            },
+            {
+              "tier": "Standard",
+              "name": "Front Desk",
+              "price_usd": 1200,
+              "delivery_days": 10,
+              "revisions": 3
+            },
+            {
+              "tier": "Premium",
+              "name": "Production",
+              "price_usd": 2800,
+              "delivery_days": 21,
+              "revisions": 5
+            }
+          ],
+          "tags": [
+            "ai phone agent",
+            "ai calling agent",
+            "vapi ai",
+            "retell ai",
+            "twilio voice agent"
+          ],
+          "extras": [
+            {
+              "title": "Extra call flow or intent branch",
+              "price_usd": 150,
+              "added_days": 2
+            },
+            {
+              "title": "Outbound module, consent and DNC gated",
+              "price_usd": 450,
+              "added_days": 5
+            },
+            {
+              "title": "30 days of tuning and weekly latency report",
+              "price_usd": 250,
+              "added_days": 0
+            }
+          ],
+          "upwork_mirror": "Project Catalog listing 1, voice receptionist, to be created on Chitraksh's Upwork account if the surface is available in the dashboard.",
+          "assets": {
+            "images": [
+              "research/gig-images/gig1-a.png",
+              "research/gig-images/gig1-b.png",
+              "research/gig-images/gig1-c.png"
+            ],
+            "video": "TODO, not recorded"
+          },
+          "resume_point": "Draft complete on all five editable steps, three images uploaded. Pending: gig video, and the verification gates before publishing."
+        },
+        {
+          "ref": "gig2",
+          "short": "AI cold calling, TCPA and DNC gated",
+          "title": "build AI cold calling agents, TCPA consent, DNC and quiet hours gating",
+          "slug": "build-ai-cold-calling-agents-tcpa-consent-dnc-and-quiet-hours-gating",
+          "slug_confirmed": true,
+          "category_path": "Programming & Tech > Software Development > Automations & Workflows",
+          "service_type": "AI Agents",
+          "declared_state": "draft-complete",
+          "price_ladder": "350/1200/2800",
+          "packages": [
+            {
+              "tier": "Basic",
+              "name": "Audit",
+              "price_usd": 350,
+              "delivery_days": 3,
+              "revisions": 1
+            },
+            {
+              "tier": "Standard",
+              "name": "Gated Dialer",
+              "price_usd": 1200,
+              "delivery_days": 12,
+              "revisions": 3
+            },
+            {
+              "tier": "Premium",
+              "name": "Full Pipeline",
+              "price_usd": 2800,
+              "delivery_days": 21,
+              "revisions": 5
+            }
+          ],
+          "tags": [
+            "ai sdr agent",
+            "outbound ai agent",
+            "appointment setter",
+            "ai voice agent",
+            "lead qualification"
+          ],
+          "extras": [
+            {
+              "title": "Second campaign flow, configured and gated",
+              "price_usd": 350,
+              "added_days": 4
+            },
+            {
+              "title": "State-by-state calling matrix for your states",
+              "price_usd": 200,
+              "added_days": 2
+            },
+            {
+              "title": "Consent and disclosure audit trail dashboard",
+              "price_usd": 300,
+              "added_days": 3
+            }
+          ],
+          "upwork_mirror": "Project Catalog listing 2, compliance-gated outbound. Highest-value mirror of the three: the Upwork category it maps to, Lead Generation and Telemarketing, has the second-highest reply rate on the platform at 14.38%.",
+          "resume_point": "Complete. Overview, pricing, description (1191/1200), 7 FAQs, 4 required buyer requirements, 3 images uploaded. Pending: gig video, and the verification gates before publishing.",
+          "assets": {
+            "images": [
+              "research/gig-images/gig2-a.png",
+              "research/gig-images/gig2-b.png",
+              "research/gig-images/gig2-c.png"
+            ],
+            "video": "TODO, not recorded"
+          }
+        },
+        {
+          "ref": "gig3",
+          "short": "n8n AI workflows, error handling and monitoring",
+          "title": "build n8n AI agent workflows, production error handling and monitoring",
+          "slug": "build-n8n-ai-agent-workflows-production-error-handling-and-monitoring",
+          "slug_confirmed": true,
+          "category_path": "Programming & Tech > Software Development > Automations & Workflows",
+          "service_type": "Automations & Agents (live Fiverr UI has no separate N8n Automation service type; n8n selected under Platform and AI Model metadata instead)",
+          "declared_state": "draft-complete",
+          "price_ladder": "250/750/2000",
+          "packages": [
+            {
+              "tier": "Basic",
+              "name": "Workflow",
+              "price_usd": 250,
+              "delivery_days": 4,
+              "revisions": 2
+            },
+            {
+              "tier": "Standard",
+              "name": "Agent System",
+              "price_usd": 750,
+              "delivery_days": 10,
+              "revisions": 3
+            },
+            {
+              "tier": "Premium",
+              "name": "Pipeline",
+              "price_usd": 2000,
+              "delivery_days": 14,
+              "revisions": 5
+            }
+          ],
+          "tags": [
+            "ai automation",
+            "mcp server",
+            "api integration",
+            "workflow automation",
+            "supabase"
+          ],
+          "extras": [
+            {
+              "title": "Extra fast delivery, Basic tier, 2 days",
+              "price_usd": 100,
+              "added_days": 0
+            },
+            {
+              "title": "Custom MCP server",
+              "price_usd": 400,
+              "added_days": 4
+            },
+            {
+              "title": "30 days monitoring",
+              "price_usd": 300,
+              "added_days": 0
+            }
+          ],
+          "upwork_mirror": "Project Catalog listing 3, production n8n pipelines. Upwork's own band for custom integrations with error handling is $800 to $2,500, so the Upwork mirror prices above the Fiverr ladder.",
+          "resume_point": "Complete. Overview with metadata, pricing with extras, description, 6 FAQs, 4 buyer requirements (3 required), 3 images uploaded. Pending: gig video, and the verification gates before publishing.",
+          "assets": {
+            "images": [
+              "research/gig-images/gig3-a.png",
+              "research/gig-images/gig3-b.png",
+              "research/gig-images/gig3-c.png"
+            ],
+            "video": "TODO, not recorded"
+          },
+          "delivery_note": "Fiverr delivery-time options jump 7 to 10 to 14 to 21 days, so the planned 8 and 15 day tiers were set to 10 and 14."
+        }
+      ]
+    },
+    {
+      "platform": "upwork",
+      "handle": "TODO-chitraksh",
+      "display_name": "Chitraksh M.",
+      "owner": "Chitraksh Mayank",
+      "jurisdiction": "India (Ranchi / Bengaluru)",
+      "status": "planned",
+      "build_order_step": 1,
+      "purpose": "Builder identity and the JSS that every badge compounds on. Upwork's own buyer guidance puts a single-flow voice agent at $600 to $6,000 and a production-grade deployment at $2,400 to $24,000, one to two orders of magnitude above the Fiverr page-one floor. Creates and owns the Oraya Labs agency.",
+      "created": null,
+      "tos_notes": "VERIFIED, research/marketplace-expansion.md section 3.3 and 3.4. 'Upwork allows only one account per person to ensure fairness, trust, and security.' 'you can only have one Upwork account for life. However, under that main account you can have one freelancer profile, one agency account, and multiple client accounts.' 'You cannot log into someone else's account or let anyone log into your account and work or communicate on your behalf.' The account name must be the one used in everyday life and the address must be the business address; Upwork 'may restrict or permanently suspend your account if we cannot verify the information you provide'. Agencies: 'each freelancer can only create one agency on Upwork', Agency Plus (about $19.99/month) is required to add members, 'all agency members can submit proposals', 'Only business managers can accept an offer', and 'All contract earnings are paid to the agency's financial account on Upwork', with payments from agency to member not facilitated by Upwork. Members retain individual account privacy and may still take their own freelance projects if not exclusive to the agency.",
+      "verification_state": {
+        "identity_verification": "not started, do it day 1, it gates Rising Talent",
+        "tax_form": "not started, W-8BEN as a non-US person",
+        "withdrawal_method": "not started, must be separate from Frankie's",
+        "freelancer_plus": "not started, $19.99/month including 100 Connects and competitor bid visibility",
+        "profile_completeness": "0%, 100% is a Rising Talent prerequisite and 10% to 15% of the search algorithm"
+      },
+      "badge_targets": {
+        "rising_talent": "4.8+ average rating, $250 earned in the past 12 months, 100% complete profile, a proposal or contract in the past 90 days, JSS 90%+ if earned, ID verified, valid withdrawal method, no account holds. One order at our prices clears it.",
+        "top_rated": "JSS 90%+, first project more than 90 days ago, $1,000 of 12-month earnings, 100% complete profile, Rising Talent or JSS 90%+ for 13 of the last 16 weeks. The binding constraint is the 90-day clock, which is why the account opens on day 1.",
+        "top_rated_plus": "Top Rated plus $10,000 of 12-month earnings as a freelancer, or $20,000 as an agency.",
+        "expert_vetted": "Top 1%, Talent Manager screen, invitation only, visible only to Business Plus and Enterprise clients. Phase three."
+      },
+      "profiles": [
+        {
+          "ref": "general",
+          "kind": "general",
+          "headline": "Compliance-Aware AI Voice Infrastructure, TCPA and CIPA Gates Enforced in Code",
+          "status": "planned"
+        },
+        {
+          "ref": "spec-voice",
+          "kind": "specialized",
+          "headline": "AI Voice Agents and Telephony, Sub-Second Latency, Measured",
+          "status": "planned",
+          "note": "Specialized profiles rank higher for niche searches, cost nothing, and each carries its own rate, headline and portfolio subset."
+        },
+        {
+          "ref": "spec-automation",
+          "kind": "specialized",
+          "headline": "Workflow Automation and AI Integration, n8n, MCP, Claude Agents",
+          "status": "planned",
+          "note": "Reaches the 'AI Integration' skill, up 178% year over year and the fastest-growing coding skill on Upwork."
+        }
+      ],
+      "catalog_listings": [
+        {
+          "ref": "cat1",
+          "mirrors": "gig1",
+          "status": "planned"
+        },
+        {
+          "ref": "cat2",
+          "mirrors": "gig2",
+          "status": "planned"
+        },
+        {
+          "ref": "cat3",
+          "mirrors": "gig3",
+          "status": "planned"
+        }
+      ],
+      "open_question": "Upwork does not publish Project Catalog eligibility on the freelancer getting-started page. Check availability inside the dashboard at signup and log the answer. Confirmed live listings exist in our exact niche, so the category is open to this kind of offer.",
+      "gigs": []
+    },
+    {
+      "platform": "upwork",
+      "handle": "TODO-orayalabs-agency",
+      "display_name": "Oraya Labs",
+      "owner": "Created from Chitraksh Mayank's freelancer account",
+      "jurisdiction": "India, with a US-based business manager",
+      "status": "planned",
+      "build_order_step": 3,
+      "purpose": "The contracting entity and the broad studio surface. Oraya Labs (orayalabs.ai) covers the full range: AI voice agents and telephony, agentic systems and multi-agent workflows with real-world access, n8n and custom automation, CRM and back-office integration, document review and risk flagging, local and private LLM deployments, compliance enforced in code. The dealership and insurance voice work (Oraya) is one product line inside it, not the whole scope. Frankie joins as a business manager, which lets him submit proposals on behalf of the agency and makes him the only party who can accept an offer.",
+      "created": null,
+      "tos_notes": "VERIFIED, research/marketplace-expansion.md section 2.9 and 3.4. 'each freelancer can only create one agency on Upwork'. Agency Plus, about $19.99/month, is required to add team members and unlocks the ability to buy Connects without handing any over; it also gives unlimited members, a custom agency URL, competitor bid visibility and Upwork Chat Pro, with no cap on business manager roles. Joining requires an invitation from the owner or an agency administrator. 'all agency members can submit proposals' and 'Each proposal draws from the agency's collective balance of Connects', but 'Only business managers can accept an offer'. Members keep their own login: 'your account remains private and sign-in details must not be shared with the agency owner or any other party'. 'All contract earnings are paid to the agency's financial account on Upwork' and payments from agency to member are not protected or facilitated by Upwork, so the internal split needs its own written agreement. On agency closure, completed contracts count toward each member's own Job Success Score in their individual freelancer account.",
+      "verification_state": {
+        "agency_plus_subscription": "not started, about $19.99/month, required before Frankie can be added",
+        "agency_profile_completeness": "0%",
+        "financial_account": "not started, agency earnings land here and the founder split needs a written agreement outside Upwork"
+      },
+      "members": [
+        {
+          "name": "Chitraksh Mayank",
+          "role": "owner",
+          "status": "planned"
+        },
+        {
+          "name": "Frankie Alicea",
+          "role": "business manager",
+          "status": "planned",
+          "note": "Submits proposals on behalf of the agency and is the only role that can accept offers. Added day 2, after Agency Plus is live."
+        }
+      ],
+      "profiles": [],
+      "gigs": [],
+      "domain": "orayalabs.ai",
+      "naming_decision": "Agency name decided 2026-09-14 by Chitraksh: Oraya Labs, domain orayalabs.ai. Replaces the earlier Hanflux AI working name so that Frankie's membership shows Oraya, not Hanflux.",
+      "positioning": {
+        "headline": "Oraya Labs: AI agents, voice systems and automation that ship to production, compliance in code",
+        "scope": [
+          "AI voice agents and telephony (Twilio, sub-second latency, measured)",
+          "Agentic systems: agents that talk to each other and act on real tools",
+          "Workflow automation: n8n, custom pipelines, error handling and monitoring",
+          "CRM, calendar and back-office integrations",
+          "Document processing: contract review, risk flagging, extraction",
+          "Local and private LLM deployments",
+          "Compliance and governance enforced in code (TCPA, DNC, disclosure, retention)"
+        ],
+        "verticals_as_case_studies": [
+          "Car dealerships",
+          "Insurance agencies"
+        ],
+        "rule": "Verticals live in portfolio entries and catalog listings, never as the top-level identity. Founder directive 2026-09-14."
+      }
+    },
+    {
+      "platform": "upwork",
+      "handle": "TODO-frankie",
+      "display_name": "Frankie A.",
+      "owner": "Frankie Alicea",
+      "jurisdiction": "United States",
+      "status": "planned",
+      "build_order_step": 2,
+      "purpose": "Frankie's own identity and his own JSS, and the US-located account. This is the only account that can see US-only job posts, which is an entire class of work Chitraksh's account cannot see at all. Also carries the LinkedIn Services page and the insurance-vertical positioning, where Frankie is the licensed producer.",
+      "created": null,
+      "tos_notes": "VERIFIED, research/marketplace-expansion.md section 3.4 and 3.6. One account per person, same clause as every other Upwork account. Agency membership does not merge accounts: members 'retain individual account privacy', and 'can still create a project as a freelancer if you are not exclusive to an agency'. On US location specifically: 'If you choose U.S. only, then only freelancers in the U.S. will be able to see your post and submit a proposal.' For every other country preference the restriction is soft and outside freelancers can still apply. Clients can also filter searches to US freelancers only. Hard boundary: Chitraksh never logs into this account and Frankie never logs into Chitraksh's. Separate devices, separate payment methods, separate withdrawal accounts. Oraya never implies insurance licensure; Frankie's producer licence is his own credential and the licensure boundary is stated explicitly in any insurance-vertical copy.",
+      "verification_state": {
+        "identity_verification": "not started, day 1",
+        "us_location_verification": "not started, required to see and bid on US-only job posts",
+        "tax_form": "not started, W-9 as a US person",
+        "withdrawal_method": "not started, must be separate from Chitraksh's",
+        "freelancer_plus": "not started, $19.99/month, this is the primary bidding account",
+        "availability_badge": "not started, hard cap 100 Connects (about $15) per month for the first 60 days",
+        "profile_completeness": "0%"
+      },
+      "profiles": [
+        {
+          "ref": "general",
+          "kind": "general",
+          "headline": "AI Voice and Compliance Systems for Insurance Agencies and Dealerships, US-based",
+          "status": "planned"
+        }
+      ],
+      "gigs": [],
+      "copy_rules": [
+        "No mention of Hanflux anywhere on this account (founder directive 2026-09-14). See playbooks/frankie-upwork-setup.md.",
+        "Joins the Oraya Labs agency (orayalabs.ai) as business manager once it exists. Decided 2026-09-14; no longer blocked on a naming question."
+      ],
+      "setup_source": "Cloud-first: any Claude session in the Upwork/Fiver Automation project, images from the Marketplace Asset Library artifact https://claude.ai/artifact/DwQewSj5StuW76xF7MG3bw"
+    },
+    {
+      "platform": "fiverr",
+      "handle": "TODO-agency",
+      "display_name": "Oraya Labs",
+      "owner": "Oraya Labs",
+      "jurisdiction": "India",
+      "status": "planned",
+      "build_order_step": 6,
+      "blocked": true,
+      "purpose": "A Fiverr agency profile, if and when a third in-house member joins. Not a second account: a Fiverr agency is a switch of the existing seller profile, and orders, gigs, chats and reviews carry over.",
+      "created": null,
+      "tos_notes": "BLOCKED, verified. research/marketplace-expansion.md section 3.2. Fiverr agencies require 'a team of at least 3 in-house professionals', an active presence in an eligible category (Programming and Tech qualifies), and demonstrated capacity for large-scale projects. The onboarding requirements page states 'Up to 9 team members are allowed. Required to add at least 3 team members'. Entry is invitation-based: Fiverr sends invitations to users meeting current standards, who then complete an application form, with a waiting list otherwise. Two founders is one short of the minimum, so this is a hard blocker today, not a soft one. It is also easily solved later by a third contributor. Do NOT attempt a second Fiverr seller account as a workaround: one account per person, permanent suspension of the account(s) involved.",
+      "verification_state": {},
+      "profiles": [],
+      "gigs": []
+    }
+  ]
+}

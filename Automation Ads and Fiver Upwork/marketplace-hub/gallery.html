@@ -1,0 +1,135 @@
+<title>Oraya Marketplace Asset Library</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{
+  --ink:#F6F7FB;--surface:#FFFFFF;--raise:#EEF1F8;--line:#D3D9E6;
+  --text:#0B0E17;--muted:#5B6478;--cyan:#0A8FA8;--violet:#6A4DE0;--mint:#118F62;--amber:#B26A00;
+  --shadow:0 1px 2px rgba(11,14,23,.06),0 8px 24px rgba(11,14,23,.08);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --ink:#06070C;--surface:#0B0E17;--raise:#111622;--line:#232A3B;
+    --text:#EEF1F8;--muted:#8B94AA;--cyan:#62E9FF;--violet:#8C6BFF;--mint:#3DF5B6;--amber:#FFC86B;
+    --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+  }
+}
+:root[data-theme="dark"]{
+  --ink:#06070C;--surface:#0B0E17;--raise:#111622;--line:#232A3B;
+  --text:#EEF1F8;--muted:#8B94AA;--cyan:#62E9FF;--violet:#8C6BFF;--mint:#3DF5B6;--amber:#FFC86B;
+  --shadow:0 1px 2px rgba(0,0,0,.4),0 8px 24px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--ink);color:var(--text);font-family:Manrope,"Segoe UI",system-ui,sans-serif;font-size:15px;line-height:1.55}
+.wrap{max-width:1180px;margin:0 auto;padding-block:40px 64px;padding-inline:20px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace}
+header{display:grid;gap:12px;margin-bottom:36px;border-bottom:1px solid var(--line);padding-bottom:28px}
+.eyebrow{font-family:"IBM Plex Mono",monospace;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--cyan)}
+h1{font-size:clamp(28px,4vw,40px);line-height:1.1;margin:0;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
+header p{margin:0;max-width:68ch;color:var(--muted)}
+.rules{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px;margin-top:8px}
+.rule{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:14px 16px;font-size:14px}
+.rule b{display:block;font-family:"IBM Plex Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--violet);margin-bottom:6px;font-weight:500}
+nav{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+nav a{font-family:"IBM Plex Mono",monospace;font-size:12px;text-decoration:none;color:var(--text);border:1px solid var(--line);border-radius:999px;padding:6px 12px;background:var(--surface)}
+nav a:hover,nav a:focus-visible{border-color:var(--cyan);outline:none}
+section{margin-bottom:44px}
+.sec-head{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:8px 20px;margin-bottom:14px}
+h2{font-size:20px;margin:0;font-weight:700}
+.sec-head .meta{color:var(--muted);font-size:13px;max-width:70ch}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:18px}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:12px;overflow:hidden;display:flex;flex-direction:column;box-shadow:var(--shadow)}
+figure a.img{display:block;background:var(--raise);aspect-ratio:16/10;overflow:hidden}
+figure img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;max-width:100%}
+figcaption{padding:12px 14px 14px;display:grid;gap:6px}
+.fname{font-family:"IBM Plex Mono",monospace;font-size:12.5px;word-break:break-all}
+.dims{font-family:"IBM Plex Mono",monospace;font-size:11.5px;color:var(--muted);font-variant-numeric:tabular-nums}
+.desc{font-size:13.5px;color:var(--text)}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:2px}
+.tag{font-family:"IBM Plex Mono",monospace;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px;border:1px solid var(--line);color:var(--muted)}
+.tag.ok{color:var(--mint);border-color:var(--mint)}
+.tag.warn{color:var(--amber);border-color:var(--amber)}
+.tag.use{color:var(--cyan);border-color:var(--cyan)}
+.open{font-size:12.5px;color:var(--cyan);text-decoration:none;font-family:"IBM Plex Mono",monospace}
+.open:hover{text-decoration:underline}
+footer{border-top:1px solid var(--line);padding-top:20px;color:var(--muted);font-size:13px;max-width:80ch}
+footer code{font-family:"IBM Plex Mono",monospace;font-size:12px;background:var(--raise);padding:1px 5px;border-radius:4px}
+@media (prefers-reduced-motion:no-preference){figure{transition:transform .15s ease}figure:hover{transform:translateY(-2px)}}
+</style>
+
+<div class="wrap">
+<header>
+  <div class="eyebrow">Oraya · Fiverr and Upwork · cloud copy</div>
+  <h1>Marketplace Asset Library</h1>
+  <p>Every image used or held for the Fiverr and Upwork profiles, hosted here so any Claude session or either founder can pull it without the Mac folder. Click an image to open it full size; right click to save. A Claude session fetches a file by its path shown under each image.</p>
+  <div class="rules">
+    <div class="rule"><b>Claude: put an image on Upwork or Fiverr</b>1. <span class="mono">Artifact read_file</span> this URL + the path under the image. 2. Copy the saved file to <span class="mono">/mnt/user-data/outputs/</span>. 3. <span class="mono">find</span> the form's file input, then <span class="mono">file_upload</span> with that path and ref. Full recipe: project doc CLOUD-AGENT.md 5a.</div>
+    <div class="rule"><b>Founder: save an image</b>Click it, then right click the full-size image and choose Save Image As. Pick that file in the Upwork or Fiverr upload dialog.</div>
+    <div class="rule"><b>Before posting anywhere</b>No client, dealership or agency named. Phone numbers masked. Every figure carries its method and date.</div>
+    <div class="rule"><b>Frankie's Upwork account</b>Hanflux is never mentioned on Frankie's profile, portfolio or proposals. He presents as Frankie Alicea, Oraya, licensed insurance producer.</div>
+    <div class="rule"><b>Source of truth</b>Redacted masters in portfolio-final are the only images cleared for upload. Source screenshots need redaction first.</div>
+  </div>
+</header>
+
+<nav aria-label="Sections">
+  <a href="#portfolio">Portfolio masters (4)</a>
+  <a href="#gigs">Gig images (11)</a>
+  <a href="#source">Source screenshots (4)</a>
+</nav>
+
+<section id="portfolio">
+  <div class="sec-head"><h2>Portfolio masters, redacted, cleared for upload</h2><span class="meta">Live on the Fiverr profile since 13 Sep 2026. Reuse as the Upwork portfolio on both founders' accounts. Outbound line masked, dealerships renamed Dealer A and Dealer B, browser chrome cropped.</span></div>
+  <div class="grid">
+    <figure><a class="img" href="assets/portfolio-final/portfolio-1-n8n-outbound-pipeline.png" target="_blank" rel="noopener"><img src="assets/portfolio-final/portfolio-1-n8n-outbound-pipeline.png" alt="n8n canvas of the insurance post-call outbound workflow"></a>
+      <figcaption><span class="fname">assets/portfolio-final/portfolio-1-n8n-outbound-pipeline.png</span><span class="dims">1920 × 1039 · PNG · 501 KB</span>
+      <span class="desc">Post-call outbound pipeline built in n8n. Fiverr portfolio P4 (Sep 2026, 7 to 30 days, 750). Fan-out canvas of the insurance post-call workflow.</span>
+      <div class="tags"><span class="tag ok">Redacted</span><span class="tag use">Fiverr live</span><span class="tag use">Upwork ready</span></div>
+      <a class="open" href="assets/portfolio-final/portfolio-1-n8n-outbound-pipeline.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/portfolio-final/portfolio-2-voice-control-center.png" target="_blank" rel="noopener"><img src="assets/portfolio-final/portfolio-2-voice-control-center.png" alt="Oraya voice control center dashboard, call register and line activity"></a>
+      <figcaption><span class="fname">assets/portfolio-final/portfolio-2-voice-control-center.png</span><span class="dims">1920 × 1039 · PNG · 489 KB</span>
+      <span class="desc">AI voice control center for a dealership line. Fiverr portfolio P1 (Aug 2026, 1 to 3 months, 2800). Call register, PII-masked views, agents on the line, 30-day line activity.</span>
+      <div class="tags"><span class="tag ok">Redacted</span><span class="tag use">Fiverr live</span><span class="tag use">Upwork ready</span></div>
+      <a class="open" href="assets/portfolio-final/portfolio-2-voice-control-center.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/portfolio-final/portfolio-3-compliance-audit-ab2905.png" target="_blank" rel="noopener"><img src="assets/portfolio-final/portfolio-3-compliance-audit-ab2905.png" alt="Compliance audit panel showing the California AB 2905 disclosure enforced in code"></a>
+      <figcaption><span class="fname">assets/portfolio-final/portfolio-3-compliance-audit-ab2905.png</span><span class="dims">1920 × 1501 · PNG · 1.1 MB</span>
+      <span class="desc">Compliance audit, AI voice disclosure in code. Fiverr portfolio P2 (Sep 2026, 7 to 30 days, 350). Law, requirement, mechanism, evidence file and line, status. California AB 2905 shown compliant.</span>
+      <div class="tags"><span class="tag ok">Redacted</span><span class="tag use">Fiverr live</span><span class="tag use">Upwork ready</span></div>
+      <a class="open" href="assets/portfolio-final/portfolio-3-compliance-audit-ab2905.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/portfolio-final/portfolio-4-governance-enforced-in-code.png" target="_blank" rel="noopener"><img src="assets/portfolio-final/portfolio-4-governance-enforced-in-code.png" alt="Governance panel: call recording, retention, outbound dialing, SMS, email and caller privacy states"></a>
+      <figcaption><span class="fname">assets/portfolio-final/portfolio-4-governance-enforced-in-code.png</span><span class="dims">1148 × 1592 · PNG · 272 KB</span>
+      <span class="desc">Governance gates enforced in code, not prompts. Fiverr portfolio P3 (Sep 2026, 7 to 30 days, 1200). Recording, 90-day retention, outbound allowlist, SMS and email gates, caller privacy.</span>
+      <div class="tags"><span class="tag ok">Redacted</span><span class="tag use">Fiverr live</span><span class="tag use">Upwork ready</span></div>
+      <a class="open" href="assets/portfolio-final/portfolio-4-governance-enforced-in-code.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+  </div>
+</section>
+
+<section id="gigs">
+  <div class="sec-head"><h2>Gig images, 1280 × 769</h2><span class="meta">Three per Fiverr gig, plus the profile cover and a contact sheet. Reuse as Upwork Project Catalog thumbnails and specialized-profile headers. Copy for each gig is in research/fiverr-profile-package.md.</span></div>
+  <div class="grid">
+    <figure><a class="img" href="assets/gig-images/gig1-a.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig1-a.png" alt="Gig 1 image A"></a><figcaption><span class="fname">assets/gig-images/gig1-a.png</span><span class="dims">1280 × 769 · PNG · 244 KB</span><span class="desc">Gig 1, AI voice receptionist for dealerships and insurance agencies. Primary image.</span><div class="tags"><span class="tag use">Gig 1</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig1-a.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig1-b.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig1-b.png" alt="Gig 1 image B"></a><figcaption><span class="fname">assets/gig-images/gig1-b.png</span><span class="dims">1280 × 769 · PNG · 266 KB</span><span class="desc">Gig 1, second image.</span><div class="tags"><span class="tag use">Gig 1</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig1-b.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig1-c.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig1-c.png" alt="Gig 1 image C"></a><figcaption><span class="fname">assets/gig-images/gig1-c.png</span><span class="dims">1280 × 769 · PNG · 257 KB</span><span class="desc">Gig 1, third image.</span><div class="tags"><span class="tag use">Gig 1</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig1-c.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig2-a.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig2-a.png" alt="Gig 2 image A"></a><figcaption><span class="fname">assets/gig-images/gig2-a.png</span><span class="dims">1280 × 769 · PNG · 260 KB</span><span class="desc">Gig 2, TCPA and DNC gated AI cold calling. Primary image.</span><div class="tags"><span class="tag use">Gig 2</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig2-a.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig2-b.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig2-b.png" alt="Gig 2 image B"></a><figcaption><span class="fname">assets/gig-images/gig2-b.png</span><span class="dims">1280 × 769 · PNG · 242 KB</span><span class="desc">Gig 2, second image.</span><div class="tags"><span class="tag use">Gig 2</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig2-b.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig2-c.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig2-c.png" alt="Gig 2 image C"></a><figcaption><span class="fname">assets/gig-images/gig2-c.png</span><span class="dims">1280 × 769 · PNG · 251 KB</span><span class="desc">Gig 2, third image.</span><div class="tags"><span class="tag use">Gig 2</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig2-c.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig3-a.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig3-a.png" alt="Gig 3 image A"></a><figcaption><span class="fname">assets/gig-images/gig3-a.png</span><span class="dims">1280 × 769 · PNG · 250 KB</span><span class="desc">Gig 3, production n8n AI workflows with error handling and monitoring. Primary image.</span><div class="tags"><span class="tag use">Gig 3</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig3-a.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig3-b.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig3-b.png" alt="Gig 3 image B"></a><figcaption><span class="fname">assets/gig-images/gig3-b.png</span><span class="dims">1280 × 769 · PNG · 255 KB</span><span class="desc">Gig 3, second image.</span><div class="tags"><span class="tag use">Gig 3</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig3-b.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/gig3-c.png" target="_blank" rel="noopener"><img src="assets/gig-images/gig3-c.png" alt="Gig 3 image C"></a><figcaption><span class="fname">assets/gig-images/gig3-c.png</span><span class="dims">1280 × 769 · PNG · 256 KB</span><span class="desc">Gig 3, third image.</span><div class="tags"><span class="tag use">Gig 3</span><span class="tag ok">Cleared</span></div><a class="open" href="assets/gig-images/gig3-c.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/cover.png" target="_blank" rel="noopener"><img src="assets/gig-images/cover.png" alt="Profile cover image"></a><figcaption><span class="fname">assets/gig-images/cover.png</span><span class="dims">1280 × 769 · PNG · 270 KB</span><span class="desc">Profile cover. Carries the Oraya brand mark; check for any Hanflux wording before using it on Frankie's account.</span><div class="tags"><span class="tag use">Profile</span><span class="tag warn">Check wording for Frankie</span></div><a class="open" href="assets/gig-images/cover.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/gig-images/contact-sheet.png" target="_blank" rel="noopener"><img src="assets/gig-images/contact-sheet.png" alt="Contact sheet of all gig images"></a><figcaption><span class="fname">assets/gig-images/contact-sheet.png</span><span class="dims">1240 × 2094 · PNG · 834 KB</span><span class="desc">Contact sheet of the full gig-image set, for review only. Not for upload.</span><div class="tags"><span class="tag">Reference</span></div><a class="open" href="assets/gig-images/contact-sheet.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+  </div>
+</section>
+
+<section id="source">
+  <div class="sec-head"><h2>Source screenshots, not yet redacted</h2><span class="meta">Raw captures from 13 Sep 2026, 2940 × 1912 unless noted. Browser chrome, bookmarks and the live demo line number are visible. Redact per playbooks/case-study-capture.md before any use. A fifth capture (Frankie's CRM campaign page) is held on the Mac only and is excluded: it shows partner ad-account billing totals, a personal domain and zero-lead rows.</span></div>
+  <div class="grid">
+    <figure><a class="img" href="assets/source-screenshots/shot-1.png" target="_blank" rel="noopener"><img src="assets/source-screenshots/shot-1.png" alt="n8n editor, insurance post-call outbound workflow, raw"></a><figcaption><span class="fname">assets/source-screenshots/shot-1.png</span><span class="dims">2940 × 1912 · PNG · 681 KB</span><span class="desc">n8n editor, Insurance Post-Call Final (outbound). Source of portfolio-1.</span><div class="tags"><span class="tag warn">Redact before use</span></div><a class="open" href="assets/source-screenshots/shot-1.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/source-screenshots/shot-2.png" target="_blank" rel="noopener"><img src="assets/source-screenshots/shot-2.png" alt="Voice control center dashboard, raw"></a><figcaption><span class="fname">assets/source-screenshots/shot-2.png</span><span class="dims">2940 × 1912 · PNG · 802 KB</span><span class="desc">Oraya Voice Control Center dashboard with the live line number visible. Source of portfolio-2.</span><div class="tags"><span class="tag warn">Redact before use</span></div><a class="open" href="assets/source-screenshots/shot-2.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/source-screenshots/shot-3.png" target="_blank" rel="noopener"><img src="assets/source-screenshots/shot-3.png" alt="Compliance audit drawer over the dashboard, raw"></a><figcaption><span class="fname">assets/source-screenshots/shot-3.png</span><span class="dims">2940 × 1912 · PNG · 1.4 MB</span><span class="desc">Compliance audit drawer, AB 2905 row, with the demo line number in the header. Source of portfolio-3.</span><div class="tags"><span class="tag warn">Redact before use</span></div><a class="open" href="assets/source-screenshots/shot-3.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+    <figure><a class="img" href="assets/source-screenshots/shot-5.png" target="_blank" rel="noopener"><img src="assets/source-screenshots/shot-5.png" alt="Governance panel, raw"></a><figcaption><span class="fname">assets/source-screenshots/shot-5.png</span><span class="dims">1148 × 1722 · PNG · 401 KB</span><span class="desc">Governance panel with browser chrome still attached. Source of portfolio-4.</span><div class="tags"><span class="tag warn">Redact before use</span></div><a class="open" href="assets/source-screenshots/shot-5.png" target="_blank" rel="noopener">Open full size</a></figcaption></figure>
+  </div>
+</section>
+
+<footer>
+  For a Claude session: <code>Artifact action:list_files</code> on this artifact lists every path above, and <code>action:read_file</code> with that path saves the PNG into the session so it can be sent to whoever is uploading, or pushed through Claude in Chrome. The written index with the same detail is the project doc <code>marketplace-hub/assets/ASSET-INDEX.md</code>. Masters on the Mac: <code>Automation Ads and Fiver Upwork/marketplace-hub/Gallery/portfolio-final/</code>.
+</footer>
+</div>
